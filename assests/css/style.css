@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css?family=Sofia");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro");
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: "sofia", sans-serif; */
+}
+
+/* *{
+     font-family: 'Crimson Pro', serif; 
+   font-size: 48px; 
+ 
+   font-family: 'Bungee Spice', cursive;
+ } */
+
+.wrapper{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* ----------main------------ */
+.main{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to right, #9c27b0, #8ecdff );
+}
+
+/* ----------navigation------------ */
+nav{
+  width: 80%;
+  position: sticky;
+  margin: 20px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+
+.logo{
+  /* flex-basis: 20px; */
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.logo img{
+  width: 60px;
+  border-radius: 50%;
+  height: 50px;
+}
+
+
+.nav-links{
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.nav-links ul li a{
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/*-------- information--------- */
+.informaton{
+  width: 769px;
+  height: 769px;
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  transform: translateY(-50%);
+}
+
+
+#circle{
+  width: 769px;
+  height: 769px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  transform: rotate(0deg);
+  transition: 1s;
+}
+
+.feature{
+  position: absolute;
+  display: flex;
+  color: #fff;
+}
+
+.feature img{
+  width: 45px;
+  height: 50px;
+}
+
+.feature div{
+  margin-left: 10px ;
+}
+
+.feature p{
+  top: 0;
+  bottom: 0;
+}
+
+.one{
+  top: 325px;
+  right: 76px;
+}
+
+.two{
+  top: 150px;
+  left: 231px;
+  transform: rotate(-90deg);
+}
+
+.three{
+  bottom: 313px;
+  left: 87px;
+  transform: rotate(-180deg);
+}
+
+.four{
+  bottom: 158px;
+  right: 253px;
+  transform: rotate(-270deg);
+}
+
+.mobile {
+  width: 164px;
+  position: absolute;
+  top: 306px;
+  left: 18%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+/*------------ controls---------- */
+
+.controls{
+  position: absolute;
+  right: 36%;
+  top: 70%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.controls h4{
+  margin: 15px 0;
+  color: #fff;
+}
+
+#upBtn{
+  width: 15px;
+  cursor: pointer;
+}
+
+#downBtn{
+  width: 15px;
+  cursor: pointer;
+  transform: rotate(180deg);
+}
+
+
+.overlay{
+  width: 0;
+  height: 0;
+  border-top: 350px solid #fff;
+  border-bottom: 350px solid #fff;
+  border-left: 350px solid #fff;
+  border-right: 350px solid transparent;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
